@@ -16,7 +16,7 @@ steps:
   inputs:
     app_location: /One
     api_location: ''
-    output_location: '/One/.vscode'
+    output_location: ''
     azure_static_web_apps_api_token: $(deployment_token)
 
 - script: |
