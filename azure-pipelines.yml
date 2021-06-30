@@ -12,6 +12,12 @@ pool:
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
+- task: AzureStaticWebApp@0
+  inputs:
+    app_location: /One
+     api_location: ''
+    output_location: ''
+    azure_static_web_apps_api_token: $(deployment_token)
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
